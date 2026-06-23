@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pondok Pesantren Darunnajah Timampu | Beranda</title>
+  <!-- Tailwind CSS v4 via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Google Fonts Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aset/styles.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-[#0b3b01] selection:text-slate-900">
+   
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-500">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 text-[#0b3b01]">
+        <img src="aset/logonavbar.svg" alt="Pondok Pesantren Darunnajah Timampu" class="h-16 w-auto">
+        <div class="flex flex-col leading-tight">
+        </div>
+      </a>
+
+      <div id="nav-links"class="hidden lg:flex items-center gap-6 text-base lg:text-lg text-white">
+        <a href="index.html" class="relative px-3 py-2 font-bold hover:text-[#00895f] transition-colors after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-5 after:h-[3px] after:bg-[#00895f] after:rounded-full after:transition-all">Beranda</a>
+        <a href="profil.html" class="relative px-3 py-2 font-bold hover:text-[#00895f] transition-colors after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-5 after:h-[3px] after:bg-[#00895f] after:rounded-full after:transition-all">Profil</a>
+        <a href="unit.html" class="relative px-3 py-2 font-bold hover:text-[#00895f] transition-colors after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-5 after:h-[3px] after:bg-[#00895f] after:rounded-full after:transition-all">Unit Sekolah</a>
+        <a href="prestasi.html" class="relative px-3 py-2 font-bold hover:text-[#00895f] transition-colors after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-5 after:h-[3px] after:bg-[#00895f] after:rounded-full after:transition-all">Prestasi</a>
+        <a href="#kontak" class="relative px-3 py-2 font-bold hover:text-[#00895f] transition-colors after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-5 after:h-[3px] after:bg-[#00895f] after:rounded-full after:transition-all">Kontak</a>
+      </div>
+
+      <div class="hidden lg:flex items-center">
+        <a href="spmb.html" class="rounded-full bg-[#0b3b01] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-[#0b3b01]/20 hover:bg-[#06410a] transition-all">PPDB Online</a>
+      </div>
+
+      <button id="menu-btn" class="lg:hidden rounded-xl border border-slate-200 p-2 text-slate-600 hover:text-slate-900 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pb-4">
+      <a href="index.html" class="block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-[#06410a] hover:text-white transition-colors">Beranda</a>
+      <a href="profil.html" class="block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-[#06410a] hover:text-white transition-colors">Profil</a>
+      <a href="index.html#programs" class="block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-[#06410a] hover:text-white transition-colors">Keunggulan</a>
+      <a href="prestasi.html" class="block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-[#06410a] hover:text-white transition-colors">Prestasi</a>
+      <a href="index.html#lokasi" class="block rounded-2xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-[#06410a] hover:text-white transition-colors">Kontak</a>
+      <a href="spmb.html" class="mt-3 block rounded-full bg-[#0b3b01] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#06410a]">PPDB Online</a>
+    </div>
+  </nav>
+
+  <!-- SECTION 1-->
+  <section class="relative h-screen overflow-hidden">
+
+    <!-- SLIDES -->
+    <div id="hero-slider" class="absolute inset-0">
+
+      <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000">
+        <img src="aset/image1.jpg"
+        class="w-full h-full object-cover">
+      </div>
+
+      <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+        <img src="aset/image2.jpg"
+        class="w-full h-full object-cover">
+      </div>
+
+      <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+        <img src="aset/image3.jpg"
+        class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/65"></div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 h-full flex items-center justify-center">
+      <div class="hero-content text-center text-white max-w-4xl px-4 sm:px-6">
+        <h1 class="font-black uppercase leading-none mt-2" style="font-size: clamp(1.75rem, 5vw, 3.5rem);">
+            <span class="text-white">PONDOK PESANTREN</span>
+            <span class="text-yellow-400">DARUNNAJAH</span> <span class="text-white">TIMAMPU</span>
+        </h1>
+
+        <div class="mx-auto my-6 sm:my-8" style="width: clamp(6rem, 80%, 24rem); height: 2.5px; background-color: rgba(255, 255, 255, 0.8); border-radius: 9999px;"></div>
+
+        <p class="max-w-4xl mx-auto leading-relaxed text-white/90 px-2 sm:px-4" style="font-size: clamp(0.85rem, 2.5vw, 1.25rem);"> 
+          Menghadirkan pendidikan yang mengintegrasikan keunggulan akademik, pembentukan karakter Islami, dan pengembangan potensi peserta didik guna melahirkan generasi yang berilmu, berakhlak mulia, dan berdaya saing. 
+        </p>
+
+        <div class="mt-10 flex justify-center gap-4">
+          <a href="profil.html"class="border border-white px-8 py-4 rounded-full font-semibold">Tentang Kami</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- UNIT PENDIDIKAN -->
+  <section id="units" class="py-16 md:py-24 bg-[#f8fdf6]">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h3 class="text-xs font-bold uppercase tracking-widest text-[#0b3b01]">Unit Pendidikan</h3>
+        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-slate-900">Tiga Lembaga di Bawah Pondok Pesantren</h2>
+        <p class="text-slate-500 text-sm md:text-base">RA, SMP IT, dan MAS — program terpadu untuk tiap jenjang usia.</p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-[1.5rem] bg-white p-6 shadow-sm text-center">
+          <div class="text-4xl">🎓</div>
+          <h4 class="mt-4 font-bold">MAS Darunnajah</h4>
+          <p class="mt-2 text-sm text-slate-600">Program SMA yang memadukan akademik dan penguatan agama.</p>
+          <a href="unit.html#ma" class="mt-4 inline-flex items-center justify-center rounded-full bg-[#0b3b01] px-4 py-2 text-sm font-semibold text-white hover:bg-[#06410a]">Detail</a>
+        </div>
+        <div class="rounded-[1.5rem] bg-white p-6 shadow-sm text-center">
+          <div class="text-4xl">📚</div>
+          <h4 class="mt-4 font-bold">SMP IT Darunnajah</h4>
+          <p class="mt-2 text-sm text-slate-600">Sekolah menengah pertama terpadu dengan program karakter.</p>
+          <a href="unit.html#smpit" class="mt-4 inline-flex items-center justify-center rounded-full bg-[#0b3b01] px-4 py-2 text-sm font-semibold text-white hover:bg-[#06410a]">Detail</a>
+        </div>
+        <div class="rounded-[1.5rem] bg-white p-6 shadow-sm text-center">
+          <div class="text-4xl">🧒</div>
+          <h4 class="mt-4 font-bold">RA Darunnajah</h4>
+          <p class="mt-2 text-sm text-slate-600">Pendidikan usia dini yang hangat dan penuh stimulasi.</p>
+          <a href="unit.html#ra" class="mt-4 inline-flex items-center justify-center rounded-full bg-[#0b3b01] px-4 py-2 text-sm font-semibold text-white hover:bg-[#06410a]">Detail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM UNGGULAN -->
+  <section id="programs" class="py-16 md:py-0 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h3 class="text-xs font-bold uppercase tracking-widest text-[#0b3b01]">Program Unggulan</h3>
+        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-slate-900">Program yang Membentuk Karakter dan Prestasi</h2>
+        <p class="text-slate-500 text-sm md:text-base">Program unggulan dan fasilitas pendukung guna memperkuat kualitas pembelajaran, tahfidz, dan kompetensi siswa di setiap jenjang.</p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="rounded-[1.5rem] bg-[#f8fbf5] p-6 shadow-sm">
+          <h4 class="font-bold">Pondok Pesantren</h4>
+          <p class="mt-2 text-sm text-slate-600">Asrama untuk pembinaan karakter dan keagamaan.</p>
+        </div>
+        <div class="rounded-[1.5rem] bg-[#f8fbf5] p-6 shadow-sm">
+          <h4 class="font-bold">Program Tahfidz</h4>
+          <p class="mt-2 text-sm text-slate-600">Pengajaran Al-Qur'an dengan target hafalan yang sistematis.</p>
+        </div>
+        <div class="rounded-[1.5rem] bg-[#f8fbf5] p-6 shadow-sm">
+          <h4 class="font-bold">Laboratorium & Komputer</h4>
+          <p class="mt-2 text-sm text-slate-600">Fasilitas modern untuk mendukung praktik ilmiah dan keterampilan digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STATISTIK -->
+  <section id="statistik" class="py-12 md:py-16 bg-[#f8fdf6]">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="rounded-[1rem] bg-white p-6 shadow-sm">
+          <div class="text-3xl font-extrabold text-[#0b3b01]">1.200+</div>
+          <div class="mt-2 text-sm text-slate-600">Jumlah Siswa</div>
+        </div>
+        <div class="rounded-[1rem] bg-white p-6 shadow-sm">
+          <div class="text-3xl font-extrabold text-[#0b3b01]">120</div>
+          <div class="mt-2 text-sm text-slate-600">Jumlah Guru & Staf</div>
+        </div>
+        <div class="rounded-[1rem] bg-white p-6 shadow-sm">
+          <div class="text-3xl font-extrabold text-[#0b3b01]">800+</div>
+          <div class="mt-2 text-sm text-slate-600">Alumni</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAMBUTAN SINGKAT: KETUA & PIMPINAN -->
+  <section id="sambutan-singkat" class="py-16 md:py-20 bg-white">
+    <div class="container mx-auto px-4 grid gap-8 lg:grid-cols-2">
+      <div class="rounded-[1.25rem] bg-[#f8fbf5] p-6">
+        <h3 class="font-bold text-slate-900">Sambutan Ketua Pondok</h3>
+        <p class="mt-3 text-sm text-slate-600">Assalamu'alaikum. Kami berkomitmen membina karakter dan prestasi generasi penerus melalui pendidikan holistik dan lingkungan asrama yang mendukung.</p>
+        <div class="mt-4 font-semibold text-slate-900">Drs. Nama Ketua</div>
+      </div>
+      <div class="rounded-[1.25rem] bg-[#f8fbf5] p-6">
+        <h3 class="font-bold text-slate-900">Sambutan Pimpinan Pondok</h3>
+        <p class="mt-3 text-sm text-slate-600">Selamat datang di Darunnajah Timampu — tempat tumbuhnya ilmu, akhlak, dan kepemimpinan.</p>
+        <div class="mt-4 font-semibold text-slate-900">Dr. Nama Pimpinan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESTASI -->
+  <section id="prestasi" class="py-16 md:py-24 bg-[#f8fdf6]">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#0b3b01]">Prestasi</span>
+          <h2 class="mt-2 text-2xl md:text-3xl font-extrabold text-slate-900">Prestasi Siswa</h2>
+        </div>
+        <a href="prestasi.html" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 transition-all">Lihat Semua</a>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-[1.5rem] bg-white p-6 shadow-sm">
+          <h3 class="font-bold">Juara II Lomba Sains</h3>
+          <p class="mt-2 text-sm text-slate-600">Tim MA meraih juara II kompetisi sains tingkat provinsi.</p>
+        </article>
+        <article class="rounded-[1.5rem] bg-white p-6 shadow-sm">
+          <h3 class="font-bold">Gebyar Kreasi Siswa</h3>
+          <p class="mt-2 text-sm text-slate-600">Acara tahunan menampilkan karya dan kreativitas siswa.</p>
+        </article>
+        <article class="rounded-[1.5rem] bg-white p-6 shadow-sm">
+          <h3 class="font-bold">Penghargaan Kebersihan</h3>
+          <p class="mt-2 text-sm text-slate-600">SMP IT meraih penghargaan sekolah terbersih tingkat kabupaten.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- BERITA TERBARU -->
+  <section id="berita" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#0b3b01]">Berita</span>
+          <h2 class="mt-2 text-2xl md:text-3xl font-extrabold text-slate-900">Berita Terbaru</h2>
+        </div>
+        <a href="prestasi.html" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 transition-all">Arsip</a>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-[1.5rem] bg-white p-6 shadow-sm">
+          <h3 class="font-bold">Gebyar Kreasi Siswa</h3>
+          <p class="mt-2 text-sm text-slate-600">Acara tahunan menampilkan karya dan kreativitas siswa dari seluruh unit.</p>
+        </article>
+        <article class="rounded-[1.5rem] bg-white p-6 shadow-sm">
+          <h3 class="font-bold">Jadwal Ujian Semester</h3>
+          <p class="mt-2 text-sm text-slate-600">Informasi penting untuk siswa dan orang tua terkait jadwal ujian.</p>
+        </article>
+        <article class="rounded-[1.5rem] bg-white p-6 shadow-sm">
+          <h3 class="font-bold">Program Pelatihan Guru</h3>
+          <p class="mt-2 text-sm text-slate-600">Peningkatan kapasitas pendidik untuk kualitas pengajaran lebih baik.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri" class="py-16 md:py-24 bg-[#f8fdf6]">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h3 class="text-xs font-bold uppercase tracking-widest text-[#0b3b01]">Galeri</h3>
+        <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-slate-900">Kegiatan & Kesan</h2>
+      </div>
+      <div class="grid gap-4 grid-cols-1 sm:grid-cols-3">
+        <img src="aset/image1.jpg" alt="Kegiatan 1" class="w-full h-48 object-cover rounded-lg">
+        <img src="aset/image2.jpg" alt="Kegiatan 2" class="w-full h-48 object-cover rounded-lg">
+        <img src="aset/image3.jpg" alt="Kegiatan 3" class="w-full h-48 object-cover rounded-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / ALUR PENDAFTARAN -->
+  <section id="pendaftaran" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-xs font-bold uppercase tracking-widest text-[#0b3b01]">Pendaftaran</h3>
+      <h2 class="mt-2 text-3xl md:text-4xl font-extrabold text-slate-900">Mau Daftar? Ikuti Langkah Singkat</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="rounded-[1rem] p-6 bg-[#f8fbf5]">
+          <strong>1.</strong> Cek persyaratan
+        </div>
+        <div class="rounded-[1rem] p-6 bg-[#f8fbf5]">
+          <strong>2.</strong> Isi formulir online
+        </div>
+        <div class="rounded-[1rem] p-6 bg-[#f8fbf5]">
+          <strong>3.</strong> Ikuti seleksi & pengumuman
+        </div>
+      </div>
+      <div class="mt-6">
+        <a href="spmb.html" class="inline-flex items-center justify-center rounded-full bg-[#0b3b01] px-8 py-4 text-sm font-semibold text-white shadow-lg hover:bg-[#06410a]">Daftar Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK & PETA LOKASI -->
+  <section id="lokasi" class="py-12 md:py-16 bg-[#f1f8f2]">
+    <div class="container mx-auto px-4 grid gap-8 md:grid-cols-2 items-start">
+      <div>
+        <h4 class="text-lg font-bold text-slate-900">Hubungi Kami</h4>
+        <p class="mt-2 text-sm text-slate-600">Desa Timampu, Kecamatan Towuti, Kabupaten Luwu Timur, Sulawesi Selatan</p>
+        <p class="mt-2 text-sm">WA: <a href="https://wa.me/6281234567890" class="text-[#0b3b01] font-semibold">+62 812-3456-7890</a></p>
+        <p class="mt-2 text-sm">Email: <a href="mailto:info@darunnajah.sch.id" class="text-[#0b3b01]">info@darunnajah.sch.id</a></p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#0b3b01] text-white">F</a>
+          <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#0b3b01] text-white">I</a>
+          <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#0b3b01] text-white">Y</a>
+        </div>
+      </div>
+      <div>
+        <div class="w-full h-64 rounded-[0.75rem] overflow-hidden">
+          <iframe src="https://www.google.com/maps?q=Timampu,+Towuti&output=embed" class="w-full h-full" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="kontak" class="bg-[#0b3b01] text-emerald-100/80 border-t border-[#0b3b01] pt-16 pb-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 font-bold text-xl text-white">
+          <span>PP</span>
+          <span>PONDOK PESANTREN DARUNNAJAH TIMAMPU</span>
+        </div>
+        <p class="text-sm leading-relaxed text-emerald-100/70">Desa Timampu, Kecamatan Towuti, Kabupaten Luwu Timur, Sulawesi Selatan.</p>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider">Tautan Cepat</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="profil.html" class="hover:text-white transition-colors">Profil</a></li>
+          <li><a href="unit.html" class="hover:text-white transition-colors">Unit Sekolah</a></li>
+          <li><a href="prestasi.html" class="hover:text-white transition-colors">Prestasi</a></li>
+          <li><a href="spmb.html" class="hover:text-white transition-colors">SPMB</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-white font-bold text-sm uppercase tracking-wider">Hubungi Kami</h4>
+        <p class="text-sm text-emerald-100/70">Informasi PPDB, akademik, dan kegiatan sekolah melalui kanal resmi berikut.</p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white hover:text-[#0b3b01] transition-all">??</a>
+          <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white hover:text-[#0b3b01] transition-all">??</a>
+          <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white hover:bg-white hover:text-[#0b3b01] transition-all">??</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="container mx-auto px-4 pt-8 border-t border-white/10 text-center text-xs text-emerald-100/50">
+      <p>&copy; 2026 Pondok Pesantren Darunnajah Timampu. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="aset/main.js" defer></script>
+
+</body>
+</html>
+
+
+
+
