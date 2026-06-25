@@ -90,7 +90,7 @@ setInterval(() => {
     navbar.classList.add('bg-white','shadow-lg');
     navbar.classList.remove('bg-transparent');
 
-    logo.src='aset/logonavbar.svg';
+    logo.src='logonavbar2.png';
 
     navLinks.forEach(link=>{
     link.classList.remove('text-white');
@@ -102,7 +102,7 @@ setInterval(() => {
     navbar.classList.remove('bg-white','shadow-lg');
     navbar.classList.add('bg-transparent');
 
-    logo.src='aset/logonavbar1.svg';
+    logo.src='logonavbar1.png';
 
     navLinks.forEach(link=>{
     link.classList.remove('text-slate-800');
