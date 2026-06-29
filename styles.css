@@ -1,11 +1,12 @@
 @theme {
   --font-sans: 'Montserrat', sans-serif;
 }
-
+/* Menambahkan scroll-behavior agar perpindahan ke anchor link menjadi mulus */
 html,
 body {
   min-height: 100%;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body::before {
@@ -13,12 +14,12 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background-image: url('background.png');
+  background-image: url('aset/background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  opacity: 0.025; */
+  opacity: 0.025;
 
   pointer-events: none;
   z-index: -1;
@@ -112,6 +113,7 @@ p {
   background-color: #0b3b01;
   color: white;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 59, 1, 0.2);
 }
 
 .active-tab {
