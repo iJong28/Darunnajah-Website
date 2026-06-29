@@ -1,0 +1,102 @@
+<!-- components/navbar.html -->
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="index.html">
+          <img
+            id="navbar-logo"
+            src="aset/logo-white.png"
+            alt="Logo Darunnajah"
+            class="h-10 transition-all duration-300"
+          />
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-4">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="profil.html" class="nav-link">Profil</a>
+          <a href="unit.html" class="nav-link">Unit</a>
+          <a href="prestasi.html" class="nav-link">Prestasi</a>
+          <a href="index.html#lokasi" class="nav-link">Kontak</a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button
+          id="mobile-menu-button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none"
+        >
+          <svg
+            class="h-6 w-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="menu-open-icon"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+            <path
+              id="menu-close-icon"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a
+        href="index.html"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
+        >Beranda</a
+      >
+      <a
+        href="profil.html"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
+        >Profil</a
+      >
+      <a
+        href="unit.html"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
+        >Unit</a
+      >
+      <a
+        href="prestasi.html"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
+        >Prestasi</a
+      >
+      <a
+        href="index.html#lokasi"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
+        >Kontak</a
+      >
+    </div>
+    <div class="px-5 py-4">
+      <a
+        href="spmb-mas.html"
+        class="block w-full text-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-800 hover:bg-green-900"
+      >
+        Pendaftaran
+      </a>
+    </div>
+  </div>
+</nav>
